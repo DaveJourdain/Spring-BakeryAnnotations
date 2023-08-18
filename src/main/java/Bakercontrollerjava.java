@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
         public ResponseEntity<Iterable<Baker>> index() {
             return new ResponseEntity<>(service.index(), HttpStatus.OK);
         }
-
+//
         public ResponseEntity<Baker> show(Long id) {
             @GetMapping(value = "/baker/{id}")
             public ResponseEntity<Baker> show(@PathVariable Long id) {
